@@ -18,8 +18,8 @@ const markup = galleryItems.map(item =>
     .join(" ")
 // console.log(markup)
 list.insertAdjacentHTML('beforeend', markup);
-list.addEventListener('click', onclick)
-function onclick(event) {
+list.addEventListener('click', onClick)
+function onClick(event) {
     event.preventDefault()
     if (!event.target.hasAttribute("data-source")) {
        return
